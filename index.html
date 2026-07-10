@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form>
+    <form onsubmit="emailSend(); reset(); return false;">
         <h2>New Account</h2>
         <div class="inputBox">
             <input type="text" required>
@@ -46,6 +46,9 @@
             ((letters, i) => `<span style="transition-delay: $ {i * 50}ms">${letters} </span>`).join('');
         });
     </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="Contact form to email.js"></script>
     
 </body>
 </html>
