@@ -7,46 +7,18 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <form onsubmit="emailSend(); reset(); return false;">
-        <h2>New Account</h2>
-        <div class="inputBox">
-            <input type="text" required>
-            <label>Username</label>
-        </div>
-
-        <div class="inputBox">
-            <input type="text" required>
-            <label>Email</label>
-        </div>
-        
-         <div class="inputBox">
-            <input type="password" required>
-            <label>Create &nbsp;&nbsp;Password</label>
-        </div>
-
-         <div class="inputBox">
-            <input type="password" required>
-            <label>Confirm &nbsp;&nbsp;Password</label>
-        </div>
-
-         <div class="inputBox">
-            <input type="submit" value="Create">
-        </div>
-
-        <p>Already have an account ?
-            <a href="#">Login</a>
-        </p>
-
-    </form>
-
-    <script>
-        let label=document.querySelectorAll('label').
-        forEach(label=> {
-            label.innerHTML = label.innerText.split('').map
-            ((letters, i) => `<span style="transition-delay: $ {i * 50}ms">${letters} </span>`).join('');
-        });
-    </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   <div class="container">
+ <h2>Get in Touch</h2>
+ <form onsubmit="emailSend(); return false;">
+  <input type="text" id="name" placeholder="name" name="name" required>
+  <input type="text" id="phone" placeholder="phone" name="phone" required>
+  <input type="email" id="email" placeholder="email" name="email" required>
+  <button type="submit" class="btn">submit</button>
+ </form>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="Contact form to email.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="Contact form to email.js"></script>
     
