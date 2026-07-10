@@ -16,10 +16,10 @@ function emailSend() {
    "Content-Type": "application/x-www-form-urlencoded"
   },
   body: new URLSearchParams({
-   apikey: "YOUR_API_KEY_HERE",
+   apikey: "CBA2E28A939AD6F5D6400A4B0DC620C62E982411EAF7E490F1FE76CB5E51EA9BF806E036020B5A589F3DA04F77164FAE",
    subject: "New Contact Form Submission",
-   from: "your_verified_email@example.com",
-   to: "your_verified_email@example.com",
+   from: "babullicer@feutech.edu.ph",
+   to: "babullicer@feutech.edu.ph",
    bodyHtml: messageBody,
    isTransactional: true
   })
